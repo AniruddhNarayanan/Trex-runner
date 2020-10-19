@@ -96,7 +96,7 @@ if(gameState === PLAY){
   
 drawSprites();
 }
-
+// this is the function to reset the game 
 function reset(){
   gameState = 1;
   gameOver.visible = false;
@@ -106,7 +106,7 @@ function reset(){
   score = 0;
   trex.changeAnimation("running",trexAnimation);
 }
-
+// function for spawning the clouds
 function spawnCloud(){
   if(frameCount%60===0){
   cloud = createSprite(600,random(20,100),10,10);
@@ -121,7 +121,7 @@ function spawnCloud(){
   
 }
 
-
+// function for spawning the obstacles
 function spawnObstacle(){
   if(frameCount%60===0){
   obstacle = createSprite(600,170,10,10);
